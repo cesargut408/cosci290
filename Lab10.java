@@ -37,8 +37,11 @@ public class Lab10{
       System.out.println(num2);
     }
    
-    if (num3 < num1){
-      System.out.prinln(num3);
+    if (num3 > num1){
+      System.out.println(num3);
+    }
+    else {
+      System.out.println(num1);
     }
     
       
