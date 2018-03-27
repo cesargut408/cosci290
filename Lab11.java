@@ -34,7 +34,7 @@ public class Lab11{
     int digit1 = num3 / 10;
     
        //Using If to compare the vsriable for the first digit to the last one to give a output of it being palindome
-    if (digit5 == digit4 && digit1 == digit2)
+    if (digit5 == digit1 && digit4 == digit2)
         System.out.println(fivedigit + " is a palindrome");
     
     //Using else to give a different output if the previous one isn't correct 
