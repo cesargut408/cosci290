@@ -37,7 +37,7 @@ public class Lab22{
     max = numbers[0];
     int indexOfMax = 0;
     for (int i = 1; i < numbers.length; i++) {
-      if (numbers[i] > max){
+      if (numbers[i] < max){
         max = numbers[i];
         indexOfMax = i;
       }
