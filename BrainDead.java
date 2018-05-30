@@ -28,11 +28,14 @@ public class BrainDead{
     System.out.println(" ");
     
     System.out.println("Eat breakfast or head to the docks? ");
+    
     boolean good = false;
     do
     {
-    response = input.next();
-     if((response.toLowerCase()).equals("breakfast")){
+   
+      response = input.next();
+     
+      if((response.toLowerCase()).equals("breakfast")){
       good = true;
 
        System.out.println("Let's go downstairs to the kitchen.");
@@ -74,9 +77,23 @@ public class BrainDead{
  
       
       //THIS QUESTION LEADS TO SCENE 2 METHOD
-      System.out.println("Run or call for help? ");
+    
+    System.out.println("Run or call for help? ");
+    
     action = input.next();
-    Scene2(action);
+     
+    if((action.toLowerCase()).equals("run")){
+       good = true;  
+      System.out.println("You run inside the mansion, find a room for safety, and lock the door. ");
+      }
+      else if((action.toLowerCase()).equals("call")){
+        good = true;
+        System.out.println("GREAT... the phone isn't working! RUN ");
+      }
+      else{
+      System.out.println("I don't understand that ");//remember to add loop later
+    }
+      
     EndingSplashScreen();
       
   }//end of main
@@ -106,30 +123,8 @@ public class BrainDead{
     System.out.println("How will you survive? ");
     
   }//end of intro method
-  
-  //start of Scene 1 method
- 
-      
-  /*
-      Player decides either to run or call for help
-      action = input.next();
-  */
-      
-  //start of Scene2 method
-  public static void Scene2(String action){
-    
-      if((action.toLowerCase()).equals("run")){
-        System.out.println("You run inside the mansion, find a room for safety, and lock the door. ");
-      }
-      else if((action.toLowerCase()).equals("call")){
-        System.out.println("GREAT... the phone isn't working! RUN ");
-      }
-      else{
-      System.out.println("I don't understand that ");//remember to add loop later
-    }
-    
-}//end of Scene2 method
-      
+       
+       
      public static void EndingSplashScreen(){
       
       System.out.println("  ____    ______           ____        _____   __  __  ____    ____    __                                      \n"
